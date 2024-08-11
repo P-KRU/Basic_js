@@ -1,0 +1,12 @@
+
+def has_special_characters(input_string):
+    for char in input_string:
+        if not char.isalnum():  
+            return True
+    return False
+
+test_string = "Hello@World!"
+if has_special_characters(test_string):
+    print("The string contains special characters.")
+else:
+    print("The string does not contain special characters.")
